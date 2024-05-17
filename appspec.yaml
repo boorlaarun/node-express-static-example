@@ -13,11 +13,11 @@ permissions:
 hooks:
   BeforeInstall:
     - location: packs/install.sh
-      runas: ubuntu
+      runas: root
   ApplicationStop:
     - location: packs/stop.sh
-      runas: ec2-user
+      runas: root
   ApplicationStart:
     - location: packs/start.sh
-      runas: ubuntu
+      runas: root
   
